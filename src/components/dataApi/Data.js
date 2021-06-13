@@ -4,11 +4,12 @@ import axios from 'axios'
 class Data extends Component {
 
     state={
-        dataApi:[]
+        dataApi:[],
+        url : "https://jsonplaceholder.typicode.com/users",
     }
 
     componentDidMount() {
-        axios.get("https://jsonplaceholder.typicode.com/users")
+        axios.get(this.state.url)
         .then(response => { 
             this.setState({
                 dataApi:response.data
@@ -23,7 +24,7 @@ class Data extends Component {
         <div className="container">
             <header className="text-center">
             <h1>DataApi</h1>
-            <h3>The Table of JSON: </h3>
+            <h3>The Table of JSON from : </h3>
             </header>
             <table className="table">
                 <thead>
