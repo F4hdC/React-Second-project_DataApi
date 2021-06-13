@@ -2,13 +2,13 @@ import React from 'react'
 
 function Home() {
     return (
-        <div className="container text-center ">
+        <div className="container text-center">
 
-            <div className="b-example-divider p-2"><h1>HOME</h1></div>
+            <div className="b-example-divider p-2 mb-3"><h1>HOME</h1></div>
 
-                <div className="row mt-3">       
+                <div className="row p-3">       
                     <div className="col-4">       
-                        <div className="card" style={{width: "18rem"}}>
+                        <div className="card" >
                         {/* <img className="card-img-top" src="..." alt="Card image cap" /> */}
                         <div className="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -18,7 +18,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="col-4">       
-                        <div className="card" style={{width: "18rem"}}>
+                        <div className="card" >
                         {/* <img className="card-img-top" src="..." alt="Card image cap" /> */}
                         <div className="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -28,7 +28,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="col-4">       
-                        <div className="card" style={{width: "18rem"}}>
+                        <div className="card" >
                         {/* <img className="card-img-top" src="..." alt="Card image cap" /> */}
                         <div className="card-body">
                             <h5 class="card-title">Card title</h5>
