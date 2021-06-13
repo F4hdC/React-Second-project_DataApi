@@ -23,7 +23,7 @@ class Data extends Component {
         return (
         <div className="container">
             <header className="text-center">
-            <h1>DataApi</h1>
+            <div className="b-example-divider p-2"><h1>DATA-API</h1></div>
             <h3>The Table of JSON from : </h3>
             </header>
             <table className="table">

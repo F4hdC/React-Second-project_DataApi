@@ -3,7 +3,7 @@
     background-color: brown !important;
 }
 .b-example-divider {
-    height: 3rem;
+   /*  height: 3rem; */
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;

@@ -2,8 +2,9 @@ import React from 'react'
 
 function Contact() {
     return (
-        <div>
-            <h1>Contact Us</h1>
+        <div className="container text-center">
+            <div className="b-example-divider p-2"><h1>CONTACT-US</h1></div>
+
         </div>
     )
 }export default Contact;
