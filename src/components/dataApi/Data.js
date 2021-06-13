@@ -20,10 +20,31 @@ class Data extends Component {
 
     render() {
         return (
-        <div className="container text-center">
+        <div className="container">
+            <header className="text-center">
             <h1>DataApi</h1>
-            <h3>The Names given in Api are: </h3>
-            {this.state.dataApi.map(items => <h5 key={items.id} className="text-success">{items.name}</h5>)}
+            <h3>The Table of JSON: </h3>
+            </header>
+            <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">UserName</th>
+                    <th scope="col">Email</th>
+                  </tr>
+                </thead>
+            {this.state.dataApi.map(items => 
+                <tbody key={items.id}>
+                  <tr>
+                    <th scope="row">{items.id}</th>
+                    <td>{items.name}</td>
+                    <td>{items.username}</td>
+                    <td>{items.email}</td>
+                  </tr>
+                  </tbody>
+                )}
+                </table>
 
         </div>
         )
